@@ -26,7 +26,7 @@ SELECT
     COUNT(*) AS customer_count,                             
     ROUND(AVG(avg_transactions_per_month), 1) AS avg_transactions_per_month
 FROM 
-    ccustomer_transaction_freq                                       
+    customer_transaction_freq                                       
 GROUP BY 
     frequency_category                                      
 ORDER BY 
