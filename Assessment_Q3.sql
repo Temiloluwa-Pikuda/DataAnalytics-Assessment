@@ -21,13 +21,13 @@ LEFT JOIN
     ON p.id = s.plan_id                                   
     AND s.confirmed_amount > 0                            
 
--- Filter to include only savings or investment plans 
+-- Filtering to include only savings or investment plans 
 WHERE 
     (p.is_regular_savings = 1 OR p.is_a_fund = 1)
 GROUP BY 
     p.id, p.owner_id, type
     
--- Filter to only show plans that meet inactivity criteria:
+-- Filtering to only show plans that meet inactivity criteria:
 HAVING                    
     DATEDIFF(CURDATE(), MAX(s.transaction_date)) > 365 
 ORDER BY 
