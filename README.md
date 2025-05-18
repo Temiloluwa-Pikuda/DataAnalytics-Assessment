@@ -67,6 +67,5 @@ This repository contains solutions to a four-part SQL assessment designed to eva
 ## Summary
 
 Each SQL file in this repository corresponds to a question in the assessment. 
-Thank you for reviewing this assessment!
 
 
